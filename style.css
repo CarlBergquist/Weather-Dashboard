@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(102, 102, 102);
+}
+
+header {
+    background-color: rgba(227, 128, 6, 0.657);
+    text-align: center;
+    min-height: 100px;
+    padding: 4%;
+    color: whitesmoke;
+    border-bottom: solid 5px;
+
+}
+
+.border {
+    border: 1 solid;
+}
+
+button:hover {
+    background-color: blue;
+    color: whitesmoke;
+}
+
