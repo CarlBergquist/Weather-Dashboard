@@ -15,4 +15,4 @@ The weather dashboard is designed to pull current weather from the requested sea
 
 ## Link to Application
 
-[Carl Bergquist link](https://carlbergquist.github.io/Portfolio/)
+[Carl Bergquist link](https://carlbergquist.github.io/Weather-Dashboard/)
