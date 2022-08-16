@@ -10,5 +10,9 @@ The weather dashboard is designed to pull current weather from the requested sea
 
 ## Screenshot
 
+![Screenshot of Weather-Dashboard](Final.png)
 
-## Link
+
+## Link to Application
+
+[Carl Bergquist link](https://carlbergquist.github.io/Portfolio/)
