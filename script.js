@@ -6,6 +6,7 @@ var wind = document.querySelector('.wind')
 var humid = document.querySelector('.humid')
 var uv = document.querySelector('.uv')
 var iconCode = document.querySelector('.icon')
+var data;
 
 
 
@@ -29,17 +30,29 @@ btn.addEventListener('click', function () {
 
           var lat = data.coord.lat
           var lon = data.coord.lon
-          
-          fetch("https://api.openweathermap.org/data/2.5/forecast/daily?lat=" + lat + "&lon=" + lon + "&cnt=5&appid=920258eaef7a61195023afcad9f13a2c")
-          .then(function (response1){
-            if (response1.ok) {
-              console.log(response1);
-              response1.json().then(function (data1){
 
-              })
-            }
-          })
+          fetch("https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + lon + "&exclude=minutely,hourly&appid=920258eaef7a61195023afcad9f13a2c&units=imperial")
+            .then(function (response) {
+              if (response.ok) {
+                console.log(response);
+                response.json().then(function (data) {
 
+                  console.log(data)
+                  var curDateEl = document.getElementById('curdate')
+                  var today = moment().utcOffset((data.timezone_offset/60)).format('[(]M[/]DD[/]YYYY[)]');
+                  
+                  curDateEl.innerHTML = (today)
+
+                  
+                  
+
+
+
+
+                })
+              }
+            })
+        
         })
       }
     })
